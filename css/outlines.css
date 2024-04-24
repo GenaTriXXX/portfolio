@@ -82,6 +82,16 @@ p::before {
   content: "p";
 }
 
+div {
+  background-color: #ffffff;
+  border: 2px solid #f36dff;
+}
+
+div::before {
+  color: #f36dff;
+  content: "div";
+}
+
 dl {
   background-color: #ffffff;
   border: 2px solid #28d119;
