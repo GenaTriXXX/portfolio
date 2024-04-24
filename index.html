@@ -1,12 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
+    <title>Сайт-визитка</title>
+    <meta name="description" content="Отличный сайт отличного человека" />
     <link href="css\outlines.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <header>
+        <nav>
+            <a href="#intro">Обо мне</a>
+            <a href="#skills">Навыки</a>
+            <a href="#skills">Интересы</a>
+            <a href="#contacts">Контакты</a>
+        </nav>
+    </header>
+
+    <section>
+        <h1>Никита Волков</h1>
+        <h2>Программист</h2>
+        <img src="img/intro-photo.jpg">
+    </section>
+
+    <section id="intro">
+        <h3>Пара слов обо мне</h3>
+        <p>Привет ✌</p>
+        <p>В данный момент я учусь в магистратуре МФ МГТУ им. Н. Э. Баумана <br>по направлению «Информатика и
+            вычисли­тельная техника». </p>
+        <p>В прошлом году защитил диплом бакалавра на тему «Разработка очень <br>сложного программного комплекса для
+            супер-важной цели». Работа была высоко оценена комиссией.</p>
+        <p>Также я уже успел поработать инженером в центре управления полетами в Королеве, <br>но в будущем планирую
+            стать разработчиком сложных программных <br>комплексов и систем.</p>
+    </section>
+    <section id="skills">
+        <header>
+            <h3>Мои навыки</h3>
+            Сортировать
+            <button>по названию</button>
+            <button>по уровню</button>
+        </header>
+        
+        <dl>
+            <dt>html</dt>
+            <dd>
+                <div style="width:40%;">20%</div>
+            </dd>
+            <dt>css</dt>
+            <dd>
+                <div style="width:40%;">20%</div>
+            </dd>
+            <dt>python</dt>
+            <dd>
+                <div style="width:40%;">10%</div>
+            </dd>
+            <dt>c++</dt>
+            <dd>
+                <div style="width:40%;">80%</div>
+            </dd>
+        </dl>
+    </section>
+    <section id="skills">
+        <h3>Мои интересы</h3>
+        <p>Наибольший интерес для меня в данный момент представляет
+            <br>программирование и изучение искусственного интеллекта.
+            <br>Но помимо учёбы и работы я также люблю играть в компьютерные игры и смотреть зарубежные фильмы.
+        </p>
+    </section>
+    <section id="contacts">
+        <h3>Мои контакты</h3>
+        <a href="mailto:email@mail.ru">email@mail.ru</a>
+        <a href="tel:+79991112233">+7(999)111-22-33</a>
+        <p>
+            GitHub Telegram Вконтакте Steam
+        </p>
+    </section>
+
+    <footer>
+        © 2024 Никита Волков
+    </footer>
 </body>
+
 </html>
