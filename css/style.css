@@ -1,56 +1,236 @@
+::before,
+::after {
+    box-sizing: border-box;
+}
 
-:root{
+:root {
     --txt-color: #212121;
     --green: #09A494;
     --bg-color: #FFFFFF;
 }
 
-body{
+body {
     font-family: "Open Sans";
     font-size: 20px;
     font-weight: regular;
-    line-height: 30px;
+    line-height: 1.5;
 
     color: var(--txt-color);
     background-color: var(--bg-color);
 }
 
-h1{
+h1 {
     font-family: "Open Sans";
     font-size: 60px;
     font-weight: bold;
-    line-height: 60px;
+    line-height: 1;
 }
 
-h2{
+h2 {
     font-family: "Open Sans";
     font-size: 30px;
     font-weight: bold;
-    line-height: 36px;
+    line-height: 1.2;
 }
 
-h3{
+h3 {
     font-family: "Open Sans";
     font-size: 24px;
     font-weight: bold;
-    line-height: 28.8px;
+    line-height: 1.2;
 }
 
-button, a{
+button, a {
     font-family: "Open Sans";
     font-size: 20px;
     font-weight: regular;
-    line-height: 20px;
+    line-height: 1;
+
 }
 
-.subtitle{
+.subtitle {
     font-family: "Open Sans";
     font-size: 38px;
     font-weight: regular;
-    line-height: 45.6px;
+    line-height: 1.2;
+    color: var(--green);
 }
 
-footer{
+footer {
     color: var(--bg-color);
     background-color: var(--txt-color);
+}
+
+.container {
+    min-width: 320px;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.main-nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--txt-color);
+    padding: 10px 15px 10px 15px;
+    vertical-align: middle;
+}
+
+.main-nav a:hover {
+    color: var(--green);
+}
+
+button {
+    padding: 6px 10px 10px 10px;
+    border: 1px solid;
+    border-radius: 8px;
+    color: var(--green);
+    background-color: var(--bg-color);
+    cursor: pointer;
+    text-transform: lowercase;
+}
+
+button:hover {
+    color: var(--bg-color);
+    background-color: var(--green);
+}
+
+.social {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.social li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.social-link {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: 1px solid;
+    border-radius: 50%;
+    border-color: var(--green);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.social-link:hover {
+    border-color: var(--green);
+    background-color: var(--green);
+}
+
+.social-link_GitHub {
+    background-image: url("../img/social-github.svg");
+}
+
+.social-link_Telegram {
+    background-image: url("../img/social-telegram.svg");
+}
+
+.social-link_VK {
+    background-image: url("../img/social-vk.svg");
+}
+
+.contact {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.contact li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    padding-left: 42px;
+}
+
+.contact-link {
+    background-repeat: no-repeat;
+}
+
+.contact-link a {
+    background-repeat: no-repeat;
+    text-decoration: none;
+    color: var(--txt-color);
+}
+
+.contact-link_email {
+    background-image: url("../img/icon-email.svg");
+}
+
+.contact-link_phone {
+    background-image: url("../img/icon-phone.svg");
+}
+
+.contact-link a:hover {
+    color: var(--green);
+}
+
+.photo {
+    border-radius: 50%;
+}
+
+.skill-list {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+.skill-list dt {
+    margin-bottom: 6px;
+    padding: 5px 0 5px 38px;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 30px;
+}
+
+.skill-level {
+    margin: 4px 0 20px;
+    padding: 2px;
+    font-size: 0;
+    border: 1px solid var(--bg-color);
+    border-radius: 16px;
+}
+
+.skill-level div {
+    height: 14px;
+    background-color: var(--green);
+    border-radius: 8px;
+}
+
+.skill-item {
+    text-transform: lowercase;
+}
+
+.skill-item_html {
+    background-image: url("../img/skill-html.svg");
+}
+
+.skill-item_css {
+    background-image: url("../img/skill-css.svg");
+}
+
+.skill-item_cpp {
+    background-image: url("../img/skill-c++.svg");
+}
+
+.skill-item_python {
+    background-image: url("../img/skill-python.svg");
 }
