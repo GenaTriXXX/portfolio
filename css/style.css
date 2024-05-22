@@ -237,3 +237,7 @@ button:hover {
 .skill-item_python {
     background-image: url("../img/skill-python.svg");
 }
+
+.button-sort{
+    text-align: right;
+}
