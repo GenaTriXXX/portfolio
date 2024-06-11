@@ -16,83 +16,99 @@
 
 <body>
     <div class="container">
-    <header class="main-header">
-        <nav class="main-nav">
-            <a href="#"><img src="img/main-logo.svg" alt="Изображение-ссылка на будущий сайт" width="60" height="60"></a>
-            <a href="#about">Обо мне</a>
-            <a href="#skills">Навыки</a>
-            <a href="#interests">Интересы</a>
-            <a href="#contacts">Контакты</a>
-        </nav>
-    </header>
+        <header class="main-header">
+            <a href="#"><img src="img/main-logo.svg" alt="Изображение-ссылка на будущий сайт" width="60"
+                    height="60"></a>
+            <nav class="main-nav">
+                <a href="#about">Обо мне</a>
+                <a href="#skills">Навыки</a>
+                <a href="#interests">Интересы</a>
+                <a href="#contacts">Контакты</a>
+            </nav>
+        </header>
+        <main>
+            <section id="intro" class="intro">
+                <div>
+                    <h1>Никита Волков</h1>
+                    <p class="subtitle">Программист</p>
+                </div>
+                <img class="photo" src="img/intro-photo.jpg" alt="Фото человека-сайта" width="400" height="400">
+            </section>
 
-    <section class="intro">
-        <img class="photo" src="img/intro-photo.jpg" alt="Фото человека-сайта" width="400" height="400">
-        <h1>Никита Волков</h1>
-        <p class ="subtitle">Программист</p>
+            <section id="about" class="about">
+                <h2>Пара слов обо мне</h2>
+                <div>
+                    <p>Привет ✌</p>
+                    <p>В данный момент я учусь в магистратуре МФ МГТУ им. Н. Э. Баумана по направлению «Информатика и
+                        вычисли­тельная техника». </p>
+                    <p>В прошлом году защитил диплом бакалавра на тему «Разработка очень сложного программного комплекса
+                        для
+                        супер-важной цели». Работа была высоко оценена комиссией.</p>
+                    <p>Также я уже успел поработать инженером в центре управления полетами в Королеве, но в будущем
+                        планирую
+                        стать разработчиком сложных программных комплексов и систем.</p>
+                </div>
+            </section>
+            <section id="skills" class="skills">
+                <div class="skills-text">
+                    <h2>Мои навыки</h2>
+                    <div class="Buttons-Sort">
+                        Сортировать
+                        <button>по названию</button>
+                        <button>по уровню</button>
+                    </div>
+                </div>
 
-    </section>
-
-    <section id="about" class="about">
-        <h2>Пара слов обо мне</h2>
-        <p>Привет ✌</p>
-        <p>В данный момент я учусь в магистратуре МФ МГТУ им. Н. Э. Баумана по направлению «Информатика и
-            вычисли­тельная техника». </p>
-        <p>В прошлом году защитил диплом бакалавра на тему «Разработка очень сложного программного комплекса для
-            супер-важной цели». Работа была высоко оценена комиссией.</p>
-        <p>Также я уже успел поработать инженером в центре управления полетами в Королеве, но в будущем планирую
-            стать разработчиком сложных программных комплексов и систем.</p>
-    </section>
-    <section id="skills" class="skills">
-        <h2>Мои навыки</h2>
-        <div class="Buttons-Sort">
-            Сортировать
-            <button>по названию</button>
-            <button>по уровню</button>
-        </div>
-
-        <dl class="skill-list">
-            <dt class="skill-item skill-item_html">html</dt>
-            <dd class="skill-level">
-                <div style="width:20%;">20%</div>
-            </dd>
-            <dt class="skill-item skill-item_css">css</dt>
-            <dd class="skill-level">
-                <div style="width:20%;">20%</div>
-            </dd>
-            <dt class="skill-item skill-item_python">python</dt>
-            <dd class="skill-level">
-                <div style="width:10%;">10%</div>
-            </dd>
-            <dt class="skill-item skill-item_cpp">c++</dt>
-            <dd class="skill-level">
-                <div style="width:80%;">80%</div>
-            </dd>
-        </dl>
-    </section>
-    <section id="interests" class="interests">
-        <h2>Мои интересы</h2>
-        <p>
-            Наибольший интерес для меня в данный момент представляет
-            программирование и изучение искусственного интеллекта.
-        </p>
-        <p>
-            Но помимо учёбы и работы я также люблю играть в компьютерные игры и смотреть зарубежные фильмы.
-        </p>
-    </section>
-    <section id="contacts" class="contacts">
-        <h2>Мои контакты</h2>
-        <ul class="contact">
-            <li class="contact-link contact-link_email"><a href="mailto:email@mail.ru">email@mail.ru</a></li>
-            <li class="contact-link contact-link_phone"><a href="tel:+79991112233">+7(999)111-22-33</a></li>
-        </ul>
-        <ul class="social">
-            <li><a href="" class="social-link social-link_GitHub"><span class="visually-hidden">GitHub</span></a></li>
-            <li><a href="" class="social-link social-link_Telegram"><span class="visually-hidden">Telegram</span></a></li>
-            <li><a href="" class="social-link social-link_VK"><span class="visually-hidden">VK</span></a></li>
-        </ul>
-    </section>
-</div>
+                <div>
+                    <dl class="skill-list">
+                        <dt class="skill-item skill-item_html">html</dt>
+                        <dd class="skill-level">
+                            <div style="width:20%;">20%</div>
+                        </dd>
+                        <dt class="skill-item skill-item_css">css</dt>
+                        <dd class="skill-level">
+                            <div style="width:20%;">20%</div>
+                        </dd>
+                        <dt class="skill-item skill-item_python">python</dt>
+                        <dd class="skill-level">
+                            <div style="width:10%;">10%</div>
+                        </dd>
+                        <dt class="skill-item skill-item_cpp">c++</dt>
+                        <dd class="skill-level">
+                            <div style="width:80%;">80%</div>
+                        </dd>
+                    </dl>
+                </div>
+            </section>
+            <section id="interests" class="interests">
+                <h2>Мои интересы</h2>
+                <div>
+                    <p>
+                        Наибольший интерес для меня в данный момент представляет
+                        программирование и изучение искусственного интеллекта.
+                    </p>
+                    <p>
+                        Но помимо учёбы и работы я также люблю играть в компьютерные игры и смотреть зарубежные фильмы.
+                    </p>
+                </div>
+            </section>
+            <section id="contacts" class="contacts">
+                <h2>Мои контакты</h2>
+                <ul class="contact">
+                    <li class="contact-link contact-link_email"><a href="mailto:email@mail.ru">email@mail.ru</a></li>
+                    <li class="contact-link contact-link_phone"><a href="tel:+79991112233">+7(999)111-22-33</a></li>
+                </ul>
+                <ul class="social">
+                    <li><a href="" class="social-link social-link_GitHub"><span
+                                class="visually-hidden">GitHub</span></a>
+                    </li>
+                    <li><a href="" class="social-link social-link_Telegram"><span
+                                class="visually-hidden">Telegram</span></a></li>
+                    <li><a href="" class="social-link social-link_VK"><span class="visually-hidden">VK</span></a></li>
+                </ul>
+            </section>
+        </main>
+    </div>
     <footer class="main-footer">
         <div class="container">
             <p>© 2024 Никита Волков</p>

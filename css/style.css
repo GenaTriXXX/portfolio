@@ -1,5 +1,6 @@
-::before,
-::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
@@ -12,9 +13,9 @@
 body {
     font-family: "Open Sans";
     font-size: 20px;
-    font-weight: regular;
+    font-weight: 400;
     line-height: 1.5;
-
+    text-align: left;
     color: var(--txt-color);
     background-color: var(--bg-color);
 }
@@ -23,12 +24,16 @@ h1 {
     font-size: 60px;
     font-weight: bold;
     line-height: 1;
+    margin: 0;
+    margin-bottom: 20px;
 }
 
 h2 {
     font-size: 30px;
     font-weight: bold;
     line-height: 1.2;
+    margin: 0;
+    margin-bottom: 40px;
 }
 
 h3 {
@@ -41,7 +46,15 @@ button, a {
     font-size: 20px;
     font-weight: regular;
     line-height: 1;
+}
 
+p{
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+p:last-child{
+    margin-bottom: 0;
 }
 
 .subtitle {
@@ -56,6 +69,11 @@ footer {
     background-color: var(--txt-color);
 }
 
+.main-footer{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
 .container {
     min-width: 320px;
     max-width: 1280px;
@@ -63,8 +81,20 @@ footer {
     padding: 0 20px;
 }
 
+.main-nav {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    order: 1;
+  }
+
+.main-header{
+    display: flex;
+    padding-top: 60px;
+    gap: 40px;
+    align-items: center;
+}
 .main-nav a {
-    display: inline-block;
     text-decoration: none;
     color: var(--txt-color);
     padding: 10px 15px 10px 15px;
@@ -73,6 +103,17 @@ footer {
 
 .main-nav a:hover {
     color: var(--green);
+}
+
+.intro{
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    justify-content: space-between;
+}
+
+.intro p{
+    margin: 0;
 }
 
 button {
@@ -90,16 +131,22 @@ button:hover {
     background-color: var(--green);
 }
 
+.about, .interests{
+    max-width: 800px;
+    padding-bottom: 120px;
+}
+
 .social {
     margin: 0;
     padding: 0;
     list-style-type: none;
+    display: flex;
 }
 
 .social li {
-    display: inline-block;
     margin: 0;
-    padding: 0;
+    padding-right: 20px;
+    align-items: center;
 }
 
 .visually-hidden {
@@ -143,15 +190,20 @@ button:hover {
 }
 
 .contact {
-    margin: 0;
+    display: inline-flex;
+    margin: 0 auto;
+    margin-bottom: 40px;
     padding: 0;
     list-style-type: none;
-    margin-top: 42px;
+    gap: 40px;
+    white-space: nowrap;
 }
+
 
 .contact li {
     display: inline-block;
-    margin: 0;
+    margin: 0 auto;
+    padding: 0;
 }
 
 .contact-link {
@@ -159,12 +211,14 @@ button:hover {
 }
 
 .contact-link a {
-    padding: 5px 40px 40px 42px;
     display: block;
+    padding: 0px 0px 0px 42px;
     background-repeat: no-repeat;
-    background-position: left top;
+    background-position: left;
     text-decoration: none;
     color: var(--txt-color);
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .contact-link_email {
@@ -181,7 +235,22 @@ button:hover {
 
 .photo {
     border-radius: 50%;
+    width: 400px;
+    height: 400px;
 }
+
+.skills{
+    padding-bottom: 120px;
+}
+
+.Buttons-Sort {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    padding: 0;
+    gap: 20px;
+}
+
 
 .skill-list {
     margin: 0;
@@ -234,4 +303,20 @@ button:hover {
 
 .button-sort{
     text-align: right;
+}
+
+.skills-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.skills-text h2{
+    margin: 0;
+}
+
+.contacts, .intro, .main-header{
+    padding-bottom: 120px;
 }
