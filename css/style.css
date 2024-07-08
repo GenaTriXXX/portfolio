@@ -427,7 +427,7 @@ button:hover {
         background-image: url(../img/button-close.svg);
     }
 
-    .nav-btn {
+    .nav-btn_burger {
         background-image: url(../img/button-americanburger.svg);
     }
 
