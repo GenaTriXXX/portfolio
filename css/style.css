@@ -288,22 +288,6 @@ button:hover {
     text-transform: lowercase;
 }
 
-.skill-item_html {
-    background-image: url("../img/skill-html.svg");
-}
-
-.skill-item_css {
-    background-image: url("../img/skill-css.svg");
-}
-
-.skill-item_cpp {
-    background-image: url("../img/skill-c++.svg");
-}
-
-.skill-item_python {
-    background-image: url("../img/skill-python.svg");
-}
-
 .button-sort {
     text-align: right;
 }
