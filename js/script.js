@@ -29,7 +29,7 @@ const skills = {
             skillList.appendChild(dt);
             skillList.appendChild(dd);
         
-            dt.style.backgroundImage = `url(${item.iconName})`
+            dt.style.backgroundImage = `url(img/${item.iconName})`
           });
     }
 }
