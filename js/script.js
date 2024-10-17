@@ -1,12 +1,12 @@
 const skills = {
     data: [
-        {skillName: 'HTML', level: 40, cssClass: 'skill-item_html', iconName: 'skill-html.svg'},
-        {skillName: 'CSS', level: 40, cssClass: 'skill-item_css', iconName: 'skill-css.svg'},
-        {skillName: 'Python', level: 10, cssClass: 'skill-item_python', iconName: 'skill-python.svg'},
-        {skillName: 'C++', level: 80, cssClass: 'skill-item_cpp', iconName: 'skill-c++.svg'}
+        {skillName: 'HTML', level: 40, iconName: 'skill-html.svg'},
+        {skillName: 'CSS', level: 40, iconName: 'skill-css.svg'},
+        {skillName: 'Python', level: 10, iconName: 'skill-python.svg'},
+        {skillName: 'C++', level: 80, iconName: 'skill-c++.svg'}
     ],
-    generateList: function(parentElement){
-        let skillList = document.querySelector(parentElement)
+    generateList: function(parentElementSelector){
+        let skillList = document.querySelector(parentElementSelector)
 
         if(!skillList) return;
 
@@ -16,7 +16,6 @@ const skills = {
             const div = document.createElement('div');
             
             dt.classList.add('skill-item');
-            dt.classList.add(item.cssClass);
             dd.classList.add('skill-level');
             
             dt.textContent = item.skillName;
@@ -26,8 +25,7 @@ const skills = {
             
             dd.appendChild(div);
             
-            skillList.appendChild(dt);
-            skillList.appendChild(dd);
+            skillList.append(dt, dd);
         
             dt.style.backgroundImage = `url(img/${item.iconName})`
           });
